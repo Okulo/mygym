@@ -5,8 +5,9 @@ class Main extends CI_Controller {
     
    	public function index()
 	{
-        $name = 'main';         
-        	$this->load->view('welcome_message');     
+        $name = 'main';     
+          $data['user'] = $this->ion_auth->user()->row();   
+        	$this->load->view('welcome_message',$data);     
 	}
 
 	public function welcome()

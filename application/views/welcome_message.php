@@ -39,9 +39,21 @@
     <div class="container">
       <div class="jumbotron">
         <h1><?php
+        	# multiple groups (by name)
+		$group = array('supervisor', 'coach');
+		if (!$this->ion_auth->in_group($group, false, true)){
+			$this->session->set_flashdata('message', 'You must be a gangsta OR a hoodrat to view this page');
+   echo '<div data-form-alert-success="true" class="alert alert-form alert-danger text-xs-center">'.$this->session->flashdata("message").'</div>';
+                       
+		}
 	echo $user->first_name." ".$user->last_name;
-    
+    echo "<br />";
+   
 ?></h1>
+
+<?php foreach ($this_user_groups as $group):?>
+                                <?php echo $group->description;?>,
+                            <?php endforeach?>
         <pre>
         <?php
 	var_dump($user);

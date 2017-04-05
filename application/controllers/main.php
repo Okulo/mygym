@@ -5,6 +5,10 @@ class Main extends CI_Controller {
     
    	public function index()
 	{
+	    if (!$this->ion_auth->logged_in())
+		{
+			redirect('auth/login');
+		}
         $name = 'main';     
         $data['user'] = $this->ion_auth->user()->row(); 
         $data['this_user_groups'] = $this->ion_auth->get_users_groups()->result();
@@ -34,5 +38,7 @@ class Main extends CI_Controller {
         $this->template->second_view($name,""); 
         //$this->load->view('blocks/info_view');
 	}
+    
+
 	   
 }

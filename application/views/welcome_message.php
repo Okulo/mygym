@@ -11,34 +11,50 @@
   </head>
 
   <body>
-
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse mb-4">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#">Top navbar</a>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline mt-2 mt-md-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-
+<nav class="navbar navbar-light mb-3" style="background-color: #e3f2fd;">
+   
+          <div class="navbar-toggleable-md ">
+            <ul class="nav navbar-nav text-md-center justify-content-md-between">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Рецепция</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Продажи</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Касса</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Инструктор</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Врач</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Бар</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Бутик</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<?=base_url();?>admin">Админ</a>
+              </li>                                          
+            </ul>
+          </div>
+        </nav>
+        
+                
     <div class="container">
       <div class="jumbotron">
+      
         <h1><?php
+        if (!$this->ion_auth->is_admin())
+		{
+			echo "you are not admin! <br /><br />";
+		}
+        echo '<pre>'; 
+        print_r($this->session->all_userdata());
+        echo '</pre>';
         	# multiple groups (by name)
 		$group = array('supervisor', 'coach');
 		if (!$this->ion_auth->in_group($group, false, true)){

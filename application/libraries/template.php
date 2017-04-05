@@ -8,6 +8,16 @@ class Template {
     $CI->load->view('blocks/welcome_message');
     }
     
+    public function admin_view($name,$data)
+    {
+    $CI =& get_instance();
+    $CI->load->view('admin/header_view'); 
+    $CI->load->view('admin/navbar_view'); 
+    $CI->load->view('admin/'.$name.'_view',$data);
+    //  $CI->load->view('blocks/social_view');
+    $CI->load->view('admin/footer_view');
+    }
+    
     public function second_view($name,$data)
     {
     $CI =& get_instance();

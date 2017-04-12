@@ -1,0 +1,39 @@
+.my-nav .nav-link{
+    font-size: 0.87rem;
+}
+.my-sub-nav .btn{
+    font-size: 0.70rem;
+    padding: 0.4rem 0.8rem;
+     margin: 2px 3px 8px;
+     
+}
+.my-sub-nav a{
+    border-bottom: 1px #FF0000;
+}
+.my-sub-nav a:hover{
+    color: #BE1818;
+}
+
+.navbar-toggleable-md .navbar-nav .nav-link{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.navbar{
+    padding: .5rem 1rem;
+}
+
+  
+@media (max-width: 768px) {
+ .my-sub-nav .btn{
+
+     width: 48%;
+     margin: 3px;
+}
+}
+@media (max-width: 480px) {
+ .my-sub-nav .btn{
+   
+     width: 100%;
+     margin: 3px;
+}
+}

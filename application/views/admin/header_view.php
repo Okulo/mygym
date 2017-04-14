@@ -9,5 +9,7 @@
     <title>MyGym</title>
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/jPushMenu.css" />
   </head>
    <body>

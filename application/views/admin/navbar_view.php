@@ -1,36 +1,39 @@
-<nav class="navbar navbar-light navbar-toggleable-md mb-2" style="background-color: #C3E1ED;">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleCenteredNav" aria-controls="navbarsExampleCenteredNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+<h3></h3>
+	<a href="#">Celery seakale</a>
+	<a href="#">Dulse daikon</a>
+	<a href="#">Zucchini garlic</a>
+	<a href="#">Catsear azuki bean</a>
+	<a href="#">Dandelion bunya</a>
+	<a href="/admin">Админ панель</a>
+</nav>
 
-      <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExampleCenteredNav">
-    <ul class="nav navbar-nav my-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Рецепция</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Продажи</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Касса</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Инструктор</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Врач</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Бар</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Бутик</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="<?=base_url();?>admin">Админ</a>
-              </li>                                          
-            </ul>
-      </div>
-    </nav>
-     
-        
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded mb-2">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+   <a href="#" class="toggle-menu menu-left push-body navbar-brand  home-ico" id="">
+  <i class="fa fa-home fa-lg"></i> 
+ </a>
+ <span class="navbar-brand mod-name">Админ панель</span>
+  <div class="collapse navbar-collapse justify-content-end"  id="navbarNav">
+    <ul class="navbar-nav my-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Пользователи</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Типы карт</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Типы купонов</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Товары</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Услуги</a>
+      </li>
+    </ul>
+  </div>
+</nav>

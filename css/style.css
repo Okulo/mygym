@@ -1,7 +1,7 @@
 .my-nav {
 }
 .my-nav .nav-link{
-    font-size: 0.87rem;
+    font-size: 0.88rem;
 }
 .my-sub-nav .btn{
     font-size: 0.70rem;
@@ -41,7 +41,7 @@
 }
 
 
-#menu-toggle{
+#menu-toggle_{
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -66,5 +66,24 @@
   margin: auto;
   line-height: 65px;
 }
+.home-ico{
+    padding: 2px;
+}
+.fa-home{
+    color: #808080;
+}
+.fa-home:hover{
+    color: #9CB3C2;
+}
+#navbarNav{
 
+}
+.navbar-toggler-right {
+    z-index: 5000 !important;
+}
+.navbar-light {
+    background: #E9F0F5;
+}
+.mod-name{
+}
 

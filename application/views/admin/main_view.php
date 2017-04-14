@@ -1,14 +1,6 @@
    <div class="container-fluid">
       <div class="row">
-<div class="col-12 col-md-12"> 
-<nav class=" my-sub-nav">
-<button type="button" class="btn btn-outline-info">Пользовтели</button>
-<button type="button" class="btn btn-outline-info">Типы карт</button>
-<button type="button" class="btn btn-outline-info">Типы купонов</button>
-<button type="button" class="btn btn-outline-info">Товары магазина</button>
-</nav>
-</div>
-      
+
         <div class="col-12 col-md-12">
           <p class="float-right hidden-md-up">
             <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Toggle nav</button>
